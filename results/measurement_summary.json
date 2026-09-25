@@ -1,0 +1,24 @@
+{
+  "configurations": 132,
+  "ok": 132,
+  "oom": 0,
+  "calibration": 63,
+  "validation": 69,
+  "latency_seconds": {
+    "min": 0.00020842300000367686,
+    "max": 0.08802069500052312
+  },
+  "memory_bytes": {
+    "min": 13116416.0,
+    "max": 4576083968.0
+  },
+  "energy_joules": {
+    "min": 0.037071547075902114,
+    "max": 31.475916666666667
+  },
+  "energy_repeat_relative_range_median": 0.01620254427561434,
+  "energy_repeat_relative_range_max": 0.14366056935127222,
+  "energy_repeat_range_over_20_percent": 0,
+  "memory_mean_absolute_relative_error": 0.4031102071291076,
+  "notes": "Descriptive statistics, not latency/energy calibration. Energy range compares three repeated interval estimates. No observations filtered."
+}

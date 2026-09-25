@@ -1,0 +1,65 @@
+{
+  "joint_performance": {
+    "successful": 6,
+    "OOM": 1,
+    "metrics": {
+      "latency": {
+        "n": 6,
+        "mape_percent": 8.201571453614102,
+        "median_ape_percent": 8.365418706683347,
+        "p90_ape_percent": 9.268533161466408,
+        "max_ape_percent": 9.453953190465803,
+        "log_rmse": 0.07937131076871447
+      },
+      "energy": {
+        "n": 6,
+        "mape_percent": 14.264577471171291,
+        "median_ape_percent": 14.519141450046513,
+        "p90_ape_percent": 16.897075023288078,
+        "max_ape_percent": 17.7894195150901,
+        "log_rmse": 0.13484983424569374
+      },
+      "memory": {
+        "n": 6,
+        "mape_percent": 52.270535455759884,
+        "median_ape_percent": 52.69337717448942,
+        "p90_ape_percent": 52.862510940152475,
+        "max_ape_percent": 52.880510992665776,
+        "log_rmse": 0.4205125371618649
+      }
+    },
+    "measurements_sha256": "e8e78df790382164f513d374e80f12a8d5a4cfba1000eb06923b527b4ed998bb"
+  },
+  "fresh_confirmation": {
+    "successful": 16,
+    "OOM": 0,
+    "metrics": {
+      "latency": {
+        "n": 16,
+        "mape_percent": 6.642163164012735,
+        "median_ape_percent": 7.288655370060749,
+        "p90_ape_percent": 8.294950942371603,
+        "max_ape_percent": 12.222915693286273,
+        "log_rmse": 0.07063320931596756
+      },
+      "energy": {
+        "n": 16,
+        "mape_percent": 12.813554340140271,
+        "median_ape_percent": 14.016592433539554,
+        "p90_ape_percent": 17.61473832128484,
+        "max_ape_percent": 18.427277056608872,
+        "log_rmse": 0.12969429474543095
+      },
+      "memory": {
+        "n": 16,
+        "mape_percent": 45.374309225265286,
+        "median_ape_percent": 51.420059931935654,
+        "p90_ape_percent": 52.60108975918827,
+        "max_ape_percent": 52.7220702096727,
+        "log_rmse": 0.3838867393747507
+      }
+    },
+    "measurements_sha256": "100381dfc13d613feb0d767f73e7456fa84c16deca468c421bf704811e563601"
+  },
+  "theta_sha256": "7afcf81a233321a22ddb57ea6362510bee63b2ba246eabfd35009d3d393125db"
+}

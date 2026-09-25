@@ -1,0 +1,63 @@
+{
+  "model": "layerwise_roofline",
+  "latency": {
+    "tau": 1.8704854406068586e-05,
+    "C": 14905204107526.564,
+    "W": 838447792821.7861
+  },
+  "energy": {
+    "tau": 1.8704854406068586e-05,
+    "C": 14905204107526.564,
+    "W": 838447792821.7861,
+    "p0": 268.19568500811806,
+    "p1": 100.47873173109423
+  },
+  "units": {
+    "tau": "s/operator",
+    "C": "FLOPs/s",
+    "W": "bytes/s",
+    "p0": "W",
+    "p1": "W"
+  },
+  "fit": {
+    "training_points": 63,
+    "seed": 42,
+    "starts": 32,
+    "converged_starts": 32,
+    "objective": "mean squared log(predicted/measured)",
+    "latency_training_log_mse": 0.008014405201009807,
+    "energy_training_log_mse": 0.052345972155936345,
+    "energy_method": "fit p0,p1 with latency parameters fixed; E=p0*T+p1*(T-17*tau)",
+    "bandwidth_method": "geometric mean logical bytes / CUDA graph device seconds on calibration-only ReLU rows with logical bytes>=64 MiB",
+    "bandwidth_reference_count": 106,
+    "bandwidth_p10": 828520830683.3572,
+    "bandwidth_p90": 845557893153.0801,
+    "bandwidth_data_sha256": "7e86de6cabb35fba6556324da4756b995fc46cb8f25c2c2d422d32fd5b05d96b"
+  },
+  "identifiability": {
+    "near_optimal_starts": 32,
+    "parameter_ranges": {
+      "tau": {
+        "min": 1.8704854302500967e-05,
+        "max": 1.870485451972274e-05
+      },
+      "C": {
+        "min": 14905204041744.395,
+        "max": 14905204178956.957
+      }
+    },
+    "active_training_operator_branches": {
+      "launch": 584,
+      "compute": 259,
+      "memory": 228
+    },
+    "warning": "Per-operator roofline assignments are model explanations; empirical throughput and CUDA traces support interpretation, but SM/DRAM counters are permission-blocked. W independently anchored to memory-only operators."
+  },
+  "selection": "Layerwise form motivated by operator diagnostics; original 69 validation rows have been inspected during development. Fresh proportional 16-point confirmation is excluded from all fitting.",
+  "measurements_sha256": "e010d01cc8d92f6240041639d358f78dbf5afb5f529bc44dbdb0d065238a94ad",
+  "source_sha256": {
+    "calibrate.py": "9ab982c9034a37433afa98c465e2d948d996a25df8038c5f520b87adf8afe633",
+    "equations.py": "1219ac63523683dd0839c4803092ef075f3dbf2e54fc37f7604019754d668c51",
+    "layer_costs.py": "b1a38f0e8a3854e6cd1131dac418087dafe72b1b3fbcdd24fac77efacae501d6"
+  }
+}
